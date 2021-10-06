@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  color: #333;
+  background-color: #fafafa;
+}
+* {
+  box-sizing: border-box;
+}
+header {
+  z-index: 10;
+  width: 100%;
+  padding: 0 50px;
+  height: 70px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  position: fixed;
+  top: 0;
+  background-color: #fafafa;
+  @media (max-width: 700px) {
+    padding: 0 30px;
+  }
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo {
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    img {
+      width: 40px;
+    }
+    h2 {
+      margin-left: 10px;
+    }
+  }
+  .menu {
+    .closed {
+      display: none;
+    }
+    .fas {
+      font-size: 30px;
+      transition: 0.25s ease-in;
+    }
+  }
+}
+.container {
+  padding: 50px;
+  margin-top: 50px;
+  @media (max-width: 700px) {
+    padding: 30px;
+  }
+}
+small {
+  font-style: italic;
+}
+.content {
+  max-width: 1200px;
+  margin: auto;
+  img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  p {
+    line-height: 1.4;
+  }
+}
+footer {
+  @media (max-width: 700px) {
+    flex-direction: column;
+    padding: 30px;
+  }
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  background-color: #333;
+  color: white;
+  ul {
+    padding-inline-start: 0px;
+  }
+  li {
+    list-style: none;
+    font-size: 16px;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+.slider {
+  transition: 0.25s ease-in;
+  position: fixed;
+  background-color: #fafafa;
+  right: -344px;
+  top: 70px;
+  width: 340px;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100vh;
+  // z-index: -1;
+  box-shadow: rgba(99, 99, 99, 0.3) -1px 6px 4px 2px;
+  // border-left: 1px solid #333;
+  ul {
+    list-style: none;
+    padding-inline-start: 0px;
+    position: relative;
+  }
+  a {
+    position: relative;
+    color: #333;
+    text-decoration: none;
+  }
+  :last-child {
+    margin-bottom: 60px;
+  }
+}
