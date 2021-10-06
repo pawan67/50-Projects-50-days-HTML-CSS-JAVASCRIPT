@@ -1,3 +1,7 @@
 li{
    list-style: circle;
 }
+body{
+   background-color: #fafafa;
+   color: #333;
+}
