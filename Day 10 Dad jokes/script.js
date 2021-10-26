@@ -2,6 +2,7 @@ const jokeEl = document.getElementById("joke");
 const jokeBtn = document.getElementById("jokeBtn");
 generateJoke();
 
+//async 
 jokeBtn.addEventListener("click", generateJoke);
 async function generateJoke() {
   const config = {
