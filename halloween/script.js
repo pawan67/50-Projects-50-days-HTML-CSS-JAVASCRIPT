@@ -12,7 +12,7 @@ btn.addEventListener("click", (e) => {
     // header.style.color = "red";
     header.innerHTML = "You did a mistake 💀"
     btn.innerHTML = "turn on lights 💡"
-    body.style.backgroundImage = "url(/img/img4.jpg)";
+    body.style.backgroundImage = "url(https://i.ytimg.com/vi/RNoHcWE8tbQ/maxresdefault.jpg)";
   } else {
     audio1.pause();
     audio2.pause();
